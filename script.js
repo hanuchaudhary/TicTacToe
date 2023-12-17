@@ -19,6 +19,7 @@ let array = [
 let disableBtns = () => {
     for (let box of boxes) {
         box.innerText = "";
+        box.disabled = false;
     }
 }
 
