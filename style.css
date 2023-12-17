@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: #ECC8AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 70vh; */
+    width: 70vh;
+    gap:.7vw;
+    /* background-color: #fff; */
+}
+
+.box{
+    height: 125px;
+    width: 125px;
+    font-size: 6vw;
+    color: #ECC8AF;
+    background-color: #CE796C;
+    border: none;
+    transition: all linear 1s;
+}
+
+.btns{
+    margin-top: 3vw;
+    /* gap: 20px; */
+}
+
+.cssbtn{
+    margin: 0 3vw;
+    background-color: #fff;
+    /* padding: 1vw; */
+    height: 60px;
+    width: 155px;
+    font-size: 25px;
+    margin-top: 2vw ;
+    border:none;
+    color: #C18C5D;
+    /* position: absolute; */
+}
+
+.winScreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    flex-direction: column;
+    height: 600px;
+    width: 700px;
+    background-color: #C18C5D;
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    /* display: none; */
+    transform: scale(0);
+    transition: all linear .5s .2s;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        /* background-color: red; */
+        /* height: 60vh; */
+        width: 100vw;
+        overflow: hidden;
+    }
+    .winScreen{
+        font-size: 5.5vw;
+        height: 60%;
+        width: 90%;
+    }
+
+    .winScreen h1{
+        margin-bottom: 2vw;
+    }
+    .winScreen h2{
+        margin-bottom: 2vw;
+    }
+
+    .box{
+        font-size: 18vw;
+    }
+    
+    }
